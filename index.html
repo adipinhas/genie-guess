@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+            <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    GUESS
+
+   <button onclick="writeInDB()">DB</button>
+    
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC77fRLJY61D7yZW0_QSq_pK88XG_Yih2U",
+    authDomain: "guess-839e3.firebaseapp.com",
+    databaseURL: "https://guess-839e3.firebaseio.com",
+    projectId: "guess-839e3",
+    storageBucket: "guess-839e3.appspot.com",
+    messagingSenderId: "355545172074",
+    appId: "1:355545172074:web:7f6b5d8bb36e334f59a213",
+    measurementId: "G-0RWRT6D7WT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore()
+  db.settings({ timestampsInSnapshot: true })
+</script>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
